@@ -145,9 +145,10 @@ public class Main {
 	 * easily maintained without requiring code changes or recompilation. That seemed drastic for this project.
 	 */
 	public static void printHelp() {
-		System.out.print("Usage Instructions: \n"
+		System.out.print("Usage: java Main [args...] \n"
+				+ "Arguments are as follows: \n"
 				+ "--help - Output a usage message and exit. \n"
-				+ "-s, --search TERMS - The terms to search for. If TERMS contains spaces, it must be fuilly quoted. \n"
+				+ "-s, --search TERMS - (REQUIRED) The terms to search for. If TERMS contains spaces, it must be fuilly quoted. If this is not set, no action will be taken. \n"
 				+ "--sort FIELD -  where field is one of \"author\" or \"title\". Sorts the results by the specified field. Defaults to title. \n"
 				+ "-p NUMBER - display the NUMBER page of results. \n"
 				+ "-h, --host HOSTNAME - the hostname or ip address where the server can be found. Defaults to 127.0.0.1. \n");
